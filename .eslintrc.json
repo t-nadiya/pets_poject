@@ -1,3 +1,53 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+     "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
+    "rules": {
+        // "indent": ["error", 4],
+        "space-infix-ops": "error",
+        // "jsx-quotes": ["error", "prefer-single"],
+        // "no-var": "error",
+        "prefer-const": "error",
+        "eqeqeq": ["error", "always"],
+        // "no-console": "error",
+        "no-cond-assign": "error",
+        "no-extra-semi": "error",
+        "no-inline-comments": "error",
+        "no-else-return": "error",
+        "curly": "error",
+        // "react/jsx-closing-bracket-location": [
+        //     "error", 
+        //     {
+        //     "nonEmpty": "after-props",
+        //     "selfClosing": "after-props"
+        //     }
+        // ],
+        "react/jsx-curly-spacing": [0, "always"]
+    }
 }
